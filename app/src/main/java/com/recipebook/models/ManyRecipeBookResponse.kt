@@ -1,4 +1,7 @@
 package com.recipebook.models
 
-class ManyRecipeBookResponse {
-}
+import com.google.gson.annotations.SerializedName
+
+class ManyRecipeBookResponse (
+    @SerializedName("recipes") val recipeBook: MutableList<RecipeBookResponse> = mutableListOf()
+)

@@ -1,0 +1,65 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_det"
+    android:background="@color/bkg_pantalla"
+    android:layout_margin="@dimen/commo_padding_min"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bkg_pantalla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_Regresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/bkg_pantalla"
+            android:text="Regresar"
+            android:textColor="@color/txt_blue" />
+    </Toolbar>
+
+    <ImageView
+        android:id="@+id/img_prod"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_recipebook_height"
+        android:background="@color/bkg_pantalla"
+        android:src="@drawable/aguafresa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bkg_pantalla"
+        android:gravity="center"
+        android:text="nombre de la receta"
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/txt_blue"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_prod" />
+
+    <TextView
+        android:id="@+id/etRecipebookDet"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:inputType="textMultiLine"
+        android:text="Detalle de la receta "
+        android:layout_marginTop="@dimen/commo_padding_min"
+        android:layout_marginBottom="@dimen/commo_padding_min"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
