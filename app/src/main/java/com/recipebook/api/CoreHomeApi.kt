@@ -1,26 +1,27 @@
 package com.recipebook.api
 
-import com.recipebook.models.ApiNewsHitsModel
-import com.recipebook.models.Constant.Companion.QUERY_HITS
 import com.recipebook.models.ManyRecipeBookResponse
-import io.reactivex.Observable
+import com.recipebook.models.ManyUserAccessResponce
+import com.recipebook.models.UserRegisterRequest
+import com.recipebook.models.UserRequest
 import io.reactivex.Single
+import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.Headers
-import retrofit2.http.Query
+import retrofit2.http.POST
 
 interface CoreHomeApi  {
-    @GET("/api/v1/search_by_date")
-    @Headers("Content-Type: application/json")
-
-    fun getHits(
-        @Query("query") query: String = QUERY_HITS,
-        @Query("page") page :Int = 0
-    ): Observable<ApiNewsHitsModel>
-
     @GET("/recipe")
     @Headers("Content-Type: application/json ")
-    fun getRecipeBook( ): Single<ManyRecipeBookResponse>
+    fun getRecipeBook(): Single<ManyRecipeBookResponse>
+
+    @POST("/access")
+    @Headers("Content-Type: application/json ")
+    fun userAccess(@Body userRequest: UserRequest): Single<ManyUserAccessResponce>
+
+    @POST("/registerUser")
+    @Headers("Content-Type: application/json ")
+    fun usuRegister(@Body userRegister: UserRegisterRequest): Single<ManyUserAccessResponce>
 }
 
 

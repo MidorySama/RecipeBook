@@ -3,9 +3,9 @@ package com.recipebook.mapping
 import com.recipebook.models.ManyRecipeBookResponse
 import com.recipebook.models.RecipeBook
 
-
 internal fun ManyRecipeBookResponse.toModel(): MutableList<RecipeBook> {
     val productList: MutableList<RecipeBook> = mutableListOf()
+
 
     recipeBook.map { prod ->
         productList.add(
@@ -23,5 +23,7 @@ internal fun ManyRecipeBookResponse.toModel(): MutableList<RecipeBook> {
     }
 
     return productList
+
+
 
 }

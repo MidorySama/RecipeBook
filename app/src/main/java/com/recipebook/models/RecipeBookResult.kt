@@ -1,6 +1,5 @@
 package com.recipebook.models
 
-class RecipeBookResult (
+class RecipeBookResult(
     var susses: Boolean = false,
-    var list: MutableList<RecipeBook> = mutableListOf()
-        )
+    var list: MutableList<RecipeBook> = mutableListOf()   )

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bkg_pantalla">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/bkg_pantalla"
+        android:minHeight="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvBack"
+            android:layout_width="@dimen/margen_regresar"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/bottom_back"
+            android:text="Regresar"
+            android:textColor="@color/txt_blue"
+            android:textSize="18sp"/>
+    </Toolbar>
+
+    <TextView
+        android:id="@+id/tvUserRegister"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp"
+        android:text="REGISTRO  USUARIO"
+        android:textAlignment="center"
+        android:textColor="@color/txt_blue"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginTop="55dp"
+        android:text="Nombre:"
+        android:textColor="@color/txt_blue"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvUserRegister" />
+
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="@dimen/edWidth"
+        android:text=""
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="195dp"
+        android:textColor="@color/txt_blue"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text=""
+        android:textColor="@color/txt_blue"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <EditText
+        android:id="@+id/edApellido"
+        android:layout_width="@dimen/edWidth"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="252dp"
+        android:textColor="@color/txt_blue"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCorreoE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:text="Correo Electronico:"
+        android:textColor="@color/txt_blue"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLastName" />
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="@dimen/edWidth"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="305dp"
+        android:textColor="@color/txt_blue"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:text=""
+        android:textColor="@color/txt_blue"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCorreoE" />
+
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="@dimen/edWidth"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="360dp"
+        android:textColor="@color/txt_blue"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRepeatPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:text="Repetir Contraseña:"
+        android:textColor="@color/txt_blue"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPassword" />
+
+    <EditText
+        android:id="@+id/edRepeat_Password"
+        android:layout_width="@dimen/edWidth"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="423dp"
+        android:textColor="@color/txt_blue"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Calendar"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="23dp"
+        android:src="@drawable/ic_calendario"
+        app:layout_constraintStart_toEndOf="@id/tvBirthDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edRepeat_Password" />
+
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="43dp"
+        android:text="Fecha de Nacimiento:"
+        android:textColor="@color/txt_blue"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRepeatPassword" />
+
+    <TextView
+        android:id="@+id/tvBirthDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="41dp"
+        android:textSize="18dp"
+        android:textColor="@color/txt_blue"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edRepeat_Password" />
+
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro"
+        android:textColor="@color/txtwhite"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="180dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Calendar"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

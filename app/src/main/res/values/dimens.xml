@@ -9,7 +9,11 @@
     <dimen name="item_recipebook_height">150dp</dimen>
     <dimen name="modal_height">750dp</dimen>
     <dimen name="spacing_24dp">750dp</dimen>
+    <dimen name="bottom_back">10dp</dimen>
+    <dimen name="margen_regresar">90dp</dimen>
+    <dimen name="margin_start">10dp</dimen>
+    <dimen name="edWidth">210dp</dimen>
     <integer name="recipebook_line_min">2</integer>
-    <integer name="recipebook_line_max">900</integer>
+    <integer name="recipebook_line_max">80</integer>
 
 </resources>
